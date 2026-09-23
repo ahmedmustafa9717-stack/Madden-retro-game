@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "art_direction": "Original realistic contemporary American football. Athletic human proportions, restrained navy/teal and plum/silver uniforms, no real team branding. Meter scale, Y-up, forward -Z, origin between feet.",
+  "runtime": "Three.js r160 / WebGL; deterministic code-driven translation; animation is visual only.",
+  "assets": {
+    "player_base": {
+      "name": "Original reusable football athlete",
+      "category": "character",
+      "source": "Original code-authored mesh, rig and clips prepared in Higgsfield cloud Blender during previous turn; not generative 3D output",
+      "generation_prompt": "Original generic professional American football athlete, approximately 1.90m tall with modern unbranded helmet, metallic facemask, pads under fitted jersey, pants, gloves, socks and cleats. Athletic realistic proportions, neutral reusable uniform, no real athlete likeness or team logos. Optimized real-time mesh, humanoid skeleton, independent PBR material regions, ground-level origin.",
+      "generated_file": "assets/original-athlete.glb",
+      "version": 2,
+      "scale": "meters, Y up, -Z forward",
+      "texture_files": [],
+      "animation_clips": [
+        "IDLE",
+        "QB_STANCE",
+        "RUN",
+        "SPRINT",
+        "BACKPEDAL",
+        "QB_THROW",
+        "CATCH",
+        "BLOCK",
+        "TACKLE",
+        "CELEBRATION",
+        "STRAFE_LEFT (runtime derived)",
+        "STRAFE_RIGHT (runtime derived)"
+      ],
+      "polygon_count": {
+        "AthleteSurface.004": 20524,
+        "AthleteSurface.005": 9646,
+        "AthleteSurface.006": 4103
+      },
+      "lod_availability": [
+        "LOD0",
+        "LOD1",
+        "LOD2"
+      ],
+      "status": "integrated; automated acceptance passed; desktop visual acceptance pending",
+      "integrated": true,
+      "notes": "Embedded into dist/index.html. One GLB parsed once, 22 independent skeletons with shared geometry; programmatic team materials and number textures. No new generation calls this turn. Animation layer is procedural, not motion-capture quality."
+    },
+    "player_upgrade_reference": {
+      "name": "Realistic athlete reference candidate",
+      "category": "reference_image",
+      "source": "Higgsfield Soul 2.0 source, corrected with built-in image editor",
+      "version": 1,
+      "generated_file": "assets/player-upgrade/player-reference-clean.png",
+      "prompt_record": "assets/player-upgrade/PROMPTS.md",
+      "review_record": "assets/player-upgrade/review.json",
+      "status": "awaiting_user_reference_review",
+      "integrated": false,
+      "notes": "Not a mesh. Original rig remains live. No 3D generation submitted."
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "status": "reference_ready_for_user_review; mesh_not_generated",
+  "purpose": "One reusable original athlete for existing Pocket Football 22-player runtime",
+  "dimensions_m": {
+    "height": 1.9
+  },
+  "origin": "between feet at ground",
+  "runtime_axes": {
+    "up": "+Y",
+    "forward": "-Z"
+  },
+  "triangle_targets": {
+    "LOD0": [
+      25000,
+      35000
+    ],
+    "LOD1": [
+      10000,
+      15000
+    ],
+    "LOD2": [
+      3000,
+      5000
+    ]
+  },
+  "materials": [
+    "Jersey",
+    "Pants",
+    "Skin",
+    "Helmet",
+    "Facemask",
+    "Gloves",
+    "Cleats",
+    "Socks",
+    "Accent"
+  ],
+  "attempts": [
+    {
+      "job_id": "7779622b-289c-40dd-b501-5767546d780f",
+      "model": "soul_2",
+      "file": "player-reference.png",
+      "status": "rejected_for_mesh_input",
+      "reason": "Unwanted printed markings; arms too close to torso."
+    },
+    {
+      "model": "gpt_image_2_5 via Higgsfield",
+      "status": "not_submitted",
+      "reason": "Plan restriction; no job ID returned."
+    },
+    {
+      "job_id": "c1cdb315-8ac4-4593-8316-1af826cc16ac",
+      "model": "soul_2",
+      "file": "player-reference-revised.png",
+      "status": "rejected_for_mesh_input",
+      "reason": "Brand-like markings, closed fists, incorrect arm pose and exposed pad construction."
+    },
+    {
+      "model": "built-in image editor",
+      "file": "player-reference-clean.png",
+      "status": "technical_visual_review_passed; human_approval_pending",
+      "sha256": "568129772563f7d3e86ab5865a28959a6ecfbea831b5b053c48d00c8fd54a895",
+      "observations": [
+        "No visible printed branding on inspected image",
+        "Complete silhouette and feet",
+        "Arms separated from torso",
+        "Open hands readable but must be reconstructed and checked in 3D",
+        "Neutral equipment with shoulder pads under jersey"
+      ],
+      "limitations": [
+        "Single near-frontal reference does not establish complete rear geometry",
+        "Image is not a GLB, rig, UV set or animation asset"
+      ]
+    }
+  ],
+  "approval": {
+    "reference": "pending",
+    "mesh_spend": "not_authorized",
+    "form": "not_reviewed",
+    "runtime_new_mesh": "not_reviewed"
+  },
+  "blockers": [
+    "MESHY_API_KEY absent in current environment; configure outside chat",
+    "No exposed Higgsfield generate_3d operation",
+    "Reference approval required by Build 3D Game Rooms before paid mesh submission"
+  ],
+  "higgsfield_image_jobs_submitted": 2,
+  "meshy_jobs_submitted": 0,
+  "actual_consumed_credits": "not reported by generation responses"
+}
